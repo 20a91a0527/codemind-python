@@ -4,7 +4,7 @@ while a>0:
     r=a%10
     if r%2==0:
         c+=1
-    elif r%2!=0:
+    else:
         d+=1
     a=a//10
 if c>0 and d>0:
