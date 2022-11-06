@@ -1,14 +1,16 @@
-a=int(input())
+n=int(input())
 s=0
-while a>0 or s>9:
-    if a==0:
-        a=s
+while 1:
+    while n>0:
+        r=n%10
+        s+=r*r
+        n=n//10
+    if s<10 and s==1:
+        print('True')
+        break
+    elif s<10 and s!=1:
+        print('False')
+        break
+    else:
+        n=s
         s=0
-    r=a%10
-    s+=r*r
-    a=a//10
-if s==1 or s==7:
-    print("True")
-else:
-    print("False")
-    
